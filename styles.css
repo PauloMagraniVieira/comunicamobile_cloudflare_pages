@@ -1,131 +1,96 @@
-/* styles.css */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Container centralizado */
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
 }
 
-/* Navegação */
 .navbar {
-  background: #004080;
-  padding: 1rem 0;
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 1rem;
 }
 
-.navbar .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 5px 10px;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  justify-content: flex-end;
+.nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
+.nav-links a:hover {
+    color: #3498db;
 }
 
-/* Seção Hero */
 .hero {
-  background: url('hero-bg.jpg') no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 100px 0;
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+.hero h1, .hero p {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 .btn {
-  background: #ff6600;
-  color: #fff;
-  padding: 0.8rem 1.5rem;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+    display: inline-block;
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s;
 }
 
-/* Seções internas */
-.about, .services, .events, .contact, .privacy {
-  padding: 4rem 0;
-  background: #fff;
-  margin-bottom: 1rem;
+.btn:hover {
+    background: #2980b9;
 }
 
-.about h2,
-.services h2,
-.events h2,
-.contact h2,
-.privacy h1 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #004080;
-}
-
-/* Cards de Serviços */
-.service-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-}
-
-.card {
-  background: #f0f0f0;
-  padding: 2rem;
-  border-radius: 8px;
-  flex: 1 1 300px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-/* Listas e links sociais */
-.events ul,
-.contact ul,
-.privacy ul {
-  list-style: disc;
-  margin-left: 2rem;
+.footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1rem;
 }
 
 .social a {
-  margin-right: 1rem;
-  text-decoration: none;
-  color: #004080;
-  font-weight: bold;
+    color: #ecf0f1;
+    margin: 0 10px;
+    text-decoration: none;
 }
 
-/* Rodapé */
-footer {
-  background: #004080;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
+.language-selector {
+    text-align: right;
+    margin: 1rem 0;
+}
+
+.language-selector button {
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background 0.3s;
+}
+
+.language-selector button:hover {
+    background: #3498db;
 }
